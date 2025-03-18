@@ -14,7 +14,7 @@ let obj={
     age:22,
 }
 
-function(){}
+//function(){}; function declaration
 const myFunction=function(){      //using function as a variable
     console.log("Hello World")
 }
