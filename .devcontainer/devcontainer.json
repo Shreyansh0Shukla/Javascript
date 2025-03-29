@@ -1,1 +1,9 @@
-{"image":"mcr.microsoft.com/devcontainers/universal:2"}
+{
+    "name": "My Codespace",
+    "image":"mcr.microsoft.com/devcontainers/universal:2",
+    "extensions": [
+      "ritwickdey.liveserver"
+    ]
+  }
+  
+  
