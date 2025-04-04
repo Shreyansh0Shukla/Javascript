@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Learning JavaScript</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    // setTimeout(function(){
+    //     console.log("JavaScript")
+    // },2000)  // it will print JavaScript one time after 2 sec
+    // const speak= function(){
+    //     console.log("JavaScript");
+        
+    // }
+    // setTimeout(speak,2000)  // => this will also do the same task as above
+    
+    const changeH1=function(){
+        document.querySelector('h1').innerHTML="Asmunna Tatla"
+    }
+    const change=setTimeout(changeH1,5000)
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearTimeout(change)
+        console.log('worked')
+    })//=> this will do event in stop button where if clicked before it changed the h1 tag it will stop it from happening
+
+</script>
+</html>
